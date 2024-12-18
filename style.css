@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(74, 74, 187);
+}
+/* Accueil du jeu----------------------------------------------*/
+.section{
+    height: 250px;
+    width: 700px;
+    background-color: #999797;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px black;
+    padding: 10px 0px;
+}
+p5{
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    border: solid 1px;
+    padding: 20px;
+    border-radius: 15px 0px;
+}
+.btn_demarer{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+}
+.section_jeu{
+    height: 450px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   background-color: #999797;
+   border-radius: 15px;
+   box-shadow: 1px 1px 10px 1px black;
+   padding: 10px 0px;
+}
+.contener{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.jeux{
+    width: 100%;
+    height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    margin: 20px 0px;
+    color: #fff;
+}
+.info{
+    width: 100%;
+}
+.titre{
+    font-size: 35px;
+    font-family:  'Times New Roman', Times, serif;    color: #fff;
+    text-align: center;
+    background-color: rgb(8, 8, 85);
+    width: 100%;
+    margin-bottom: 10px;
+}
+.message1{
+    display: none;
+}
+.message{
+  
+   color: #fff!important;
+   font-size: 25px!important;
+    width: 100%!important;
+    text-align: center!important;
+}
+.image{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    background-position: center;
+    background-image: url('robot.png');
+    background-size: cover;
+  
+}
+.image_joueur{
+    height: 150px;
+    width: 150px;
+    background-image: url('Homme.png');
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+/* classes joueurs */
+.pierre_joueur{
+    background-image: url('pierre.png')!important;
+    display:  block!important;
+
+}
+.feuille_joueur{
+    background-image: url('feuille.png')!important;
+    display:  block!important;
+}
+.ciseaux_joueur{
+    background-image: url('ciseaux.png')!important;
+    display:  block!important;
+}
+
+/* classes ordinateur-------------------------------------------------*/
+.pierre{
+    background-image: url('pierre.png')!important;
+    display:  block!important;
+
+}
+.feuille{
+    background-image: url('feuille.png')!important;
+    display:  block!important;
+}
+.ciseaux{
+    background-image: url('ciseaux.png')!important;
+    display:  block!important;
+}
+button{
+    margin: 50px 35px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 25px;
+    border-radius: 5px 10px;
+    background-color: rgb(202, 207, 209);
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn_remove{
+    display: none!important;
+}
+button:hover{
+    background-color: rgba(31, 122, 207, 0.952);
+    color: #fff;
+}
+.score{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.replay{
+    width: 150px;
+}
+ @media screen and (max-width:578px) {
+        button{
+            margin: 50px 20px;
+        }
+}  
+@media screen and (max-width:489px) {
+    button{
+        margin: 50px 10px;
+        font-size: 20px;
+        font-weight: 200;
+        padding: 5px 25px;
+    }
+}   
+@media screen and (max-width:390px) {
+    button{
+       margin: 50px 5px;
+       padding: 2px 25px;
+    }
+} 
