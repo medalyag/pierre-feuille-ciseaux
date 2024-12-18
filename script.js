@@ -189,18 +189,13 @@ fonction.forEach(e => {
                 replay.innerHTML = 'Replay'
                 replay.classList.add('replay')
                 btn_fonction.append(replay)
-                const quitter = creer('button')
-                quitter.innerHTML = 'Sortir'
-                replay.classList.add('replay')
-                btn_fonction.append(quitter)
+               
 
                 replay.addEventListener('click', e=>{
-                    console.log('kjldjld')
                     score_joueur = 0
                     score_ordinateur = 0
                     div_score.innerHTML = `${score_ordinateur} - ${score_joueur}`
                     e.currentTarget.remove()
-                    quitter.remove()
                     //retour des images d'origines
                     //ordinateur
                     div_image.classList.add('image')
@@ -221,9 +216,8 @@ fonction.forEach(e => {
                     btn_fonction.append(btn_ciseaux)
 
                 })
-                quitter.addEventListener('click',e=>{
-                    window.close()
-                })
+                    
+               
              }
             
         })
